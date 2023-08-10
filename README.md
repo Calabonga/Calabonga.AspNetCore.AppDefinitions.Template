@@ -10,10 +10,14 @@ Define your Web API application parts in different definitions (files). It's rem
 dotnet new install Calabonga.AspNetCore.AppDefinitions.Template
 ```
 
+![install appdef](/whatnot/images/install-appdef.png)
+
 Проверить установлены ли шаблоны можно командой 
 ``` bash
 dotnet new list
 ```
+
+![installed appdef](/whatnot/images/template-appdef-installed.png)
 
 Команда выведет список всех установленных шаблонов. Также после установки шаблонов, они станут доступы в Visual Studio и JetBrains Rider. 
 
@@ -23,6 +27,8 @@ dotnet new list
 ``` bash
 dotnet new uninstall Calabonga.AspNetCore.AppDefinitions.Template
 ```
+
+![uninstall appdef](/whatnot/images/uninstall-appdef.png)
 
 ## Больше информации (More info)
 
