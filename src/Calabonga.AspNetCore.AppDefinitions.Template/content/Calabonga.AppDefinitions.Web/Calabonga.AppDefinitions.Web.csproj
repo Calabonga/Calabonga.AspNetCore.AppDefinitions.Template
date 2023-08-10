@@ -7,7 +7,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Calabonga.AspNetCore.AppDefinitions" Version="2.1.0" />
+		<PackageReference Include="Calabonga.AspNetCore.AppDefinitions" Version="2.2.0" />
 		<PackageReference Include="MassTransit.RabbitMQ" Version="8.0.16" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
