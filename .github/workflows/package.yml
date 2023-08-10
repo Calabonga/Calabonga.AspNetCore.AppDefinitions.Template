@@ -1,6 +1,9 @@
-name: Nuget Delivery
+name: Nuget AppDefinitions Deploy
 
 on:
+  push:
+    branches: [master]
+
   workflow_dispatch:
 
 permissions:
