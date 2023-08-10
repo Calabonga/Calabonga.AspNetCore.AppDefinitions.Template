@@ -30,6 +30,16 @@ dotnet new uninstall Calabonga.AspNetCore.AppDefinitions.Template
 
 ![uninstall appdef](whatnot/images/uninstall-appdef.png)
 
+## Как использовать (How to use)
+
+При создании нового проекта, можно выбрать новый шаблон в Visual Studio
+
+![visual-studio-template](whatnot/images/new-project-create.png)
+
+А также можно выбрать новый шаблон в JetBrains Rider
+
+![rider-template](whatnot/images/new-project-create2.png)
+
 ## Больше информации (More info)
 
 * [Application Definitions](https://www.calabonga.net/blog/post/devtool-21-application-definitions) - Статья как использовать nuget-пакет.
