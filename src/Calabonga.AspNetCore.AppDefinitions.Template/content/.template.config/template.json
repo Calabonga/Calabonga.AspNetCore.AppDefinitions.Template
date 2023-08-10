@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Calabonga SOFT",
+    "classifications": [
+        "Common",
+        "Web",
+        "WebAPI"
+    ],
+    "name": "ASP.NET Core Web API with AppDefinitions",
+    "description": "Define your Web API application parts in different definitions (files). It's remarkably simple and useful. You will know what features your application consists of.",
+    "identity": "Calabonga.AppDefinitions.Web",
+    "shortName": "webapi-appdef",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Calabonga.AppDefinitions",
+    "preferNameDirectory": true,
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net7.0"
+                }
+            ],
+            "defaultValue": "net7.0"
+        }
+    },
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "exclude": [
+                        ".vs/**",
+                        ".idea/**",
+                        "_ReSharper.Caches/**",
+                        ".template_config/**"
+                    ]
+                }
+            ]
+        }
+    ]
+}

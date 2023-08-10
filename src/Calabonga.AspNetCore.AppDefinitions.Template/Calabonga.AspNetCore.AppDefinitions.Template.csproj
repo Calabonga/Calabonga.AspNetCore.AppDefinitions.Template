@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- The package metadata. Fill in the properties marked as TODO below -->
+    <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
+    <PackageId>Calabonga.AspNetCore.AppDefinitions.Template</PackageId>
+    <PackageVersion>2.2.0-beta.7</PackageVersion>
+    <Title>ASP.NET Core Web API with AppDefinitions</Title>
+    <Authors>Calabonga</Authors>
+    <Copyright>Calabonga SOFT 2001-2023</Copyright>
+    <PackageIcon>logo.png</PackageIcon>
+    <Description>Define your Web API application parts in different definitions (files). It's simple and useful. You will know what features your application consists of.</Description>
+    <PackageTags>template, application, definitions, API, backend, aspnetcore, calabonga</PackageTags>
+    <PackageProjectUrl>https://github.com/Calabonga/Calabonga.AspNetCore.AppDefinitions.Template</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+
+    <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
+    <PackageType>Template</PackageType>
+    <TargetFramework>net7.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Calabonga/Calabonga.AspNetCore.AppDefinitions.Template</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.TemplateEngine.Tasks" Version="*" PrivateAssets="all" IsImplicitlyDefined="true" />
+  </ItemGroup>
+
+   <ItemGroup>
+        <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**;content\**\.vs\**" />
+        <Compile Remove="**\*" />
+        <Compile Remove="content\_ReSharper.Caches\**" />
+        <Compile Remove="_ReSharper.Caches\**" />
+        <Content Remove="content\_ReSharper.Caches\**" />
+        <EmbeddedResource Remove="content\_ReSharper.Caches\**" />
+        <EmbeddedResource Remove="_ReSharper.Caches\**" />
+        <None Remove="content\_ReSharper.Caches\**" />
+        <None Remove="_ReSharper.Caches\**" />
+    </ItemGroup>
+
+   <ItemGroup>
+     <None Include="..\..\README.md">
+       <Pack>True</Pack>
+       <PackagePath>\</PackagePath>
+     </None>
+     <None Include="..\logo.png">
+       <Pack>True</Pack>
+       <PackagePath>\</PackagePath>
+     </None>
+   </ItemGroup>
+
+    <ItemGroup>
+        <None Update="logo.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
+
+</Project>
