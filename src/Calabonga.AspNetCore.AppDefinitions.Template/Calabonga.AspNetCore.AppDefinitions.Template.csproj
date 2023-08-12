@@ -4,7 +4,7 @@
     <!-- The package metadata. Fill in the properties marked as TODO below -->
     <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>Calabonga.AspNetCore.AppDefinitions.Template</PackageId>
-    <PackageVersion>2.2.0</PackageVersion>
+    <PackageVersion>2.2.1</PackageVersion>
     <Title>ASP.NET Core Web API with AppDefinitions</Title>
     <Authors>Calabonga</Authors>
     <Copyright>Calabonga SOFT 2001-2023</Copyright>
@@ -13,7 +13,7 @@
     <PackageTags>template, application, definitions, API, backend, aspnetcore, calabonga</PackageTags>
     <PackageProjectUrl>https://github.com/Calabonga/Calabonga.AspNetCore.AppDefinitions.Template</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReleaseNotes>README updated</PackageReleaseNotes>
+    <PackageReleaseNotes>LaunchSettings updated. LaunchUrl added.</PackageReleaseNotes>
 
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
     <PackageType>Template</PackageType>
@@ -43,6 +43,10 @@
         <None Remove="content\_ReSharper.Caches\**" />
         <None Remove="_ReSharper.Caches\**" />
     </ItemGroup>
+
+   <ItemGroup>
+     <None Remove="content\Calabonga.AppDefinitions.Web\Properties\launchSettings.json" />
+   </ItemGroup>
 
    <ItemGroup>
      <None Include="..\..\README.md">
