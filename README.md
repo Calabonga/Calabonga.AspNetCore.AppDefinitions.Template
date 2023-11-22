@@ -2,6 +2,16 @@
 
 Define your Web API application parts in different definitions (files). It's remarkably simple and useful. You will know what features your application consists of.
 
+## Версия 2.4.0
+
+* Nuget-пакеты обновлены для использования `NET8`
+* Правка в документации по установке
+
+## Версия 2.3.0
+
+* Nuget-пакеты обновлены
+* Правка в документации по установке
+
 ## Как установить (How to install template)
 
 Чтобы установить шаблон для `ASP.NET Core Web API with AppDefinitions` достаточно выполнить команду:
@@ -10,12 +20,18 @@ Define your Web API application parts in different definitions (files). It's rem
 dotnet new install Calabonga.AspNetCore.AppDefinitions.Template
 ```
 
+Кстати, эта же команда обновит шаблон, если появилась новая версия. (By the way, this command will update template if the new version exists.)
+
 ![install appdef](whatnot/images/install-appdef.png)
 
 Проверить установлены ли шаблоны можно командой 
 ``` bash
 dotnet new list
 ```
+
+![installed appdef](whatnot/images/template-appdef-installed.png)
+
+Команда выведет список всех установленных шаблонов. Также после установки шаблонов, они станут доступы в Visual Studio и JetBrains Rider. 
 
 ![installed appdef](whatnot/images/template-appdef-installed.png)
 

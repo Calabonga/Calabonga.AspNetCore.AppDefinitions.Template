@@ -4,10 +4,10 @@
     "classifications": [
         "Common",
         "Web",
-        "WebAPI"
+        "Web API"
     ],
     "name": "ASP.NET Core Web API with AppDefinitions",
-    "description": "Define your Web API application parts in different definitions (files). It's remarkably simple and useful. You will know what features your application consists of.",
+    "description": "Define your Web API application parts in different definitions (files) for NET8.0. It's remarkably simple and useful. You will know what features your application consists of.",
     "identity": "Calabonga.AppDefinitions.Web",
     "shortName": "webapi-appdef",
     "tags": {
@@ -23,10 +23,10 @@
             "datatype": "choice",
             "choices": [
                 {
-                    "choice": "net7.0"
+                    "choice": "net8.0"
                 }
             ],
-            "defaultValue": "net7.0"
+            "defaultValue": "net8.0"
         }
     },
     "sources": [
