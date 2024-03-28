@@ -24,8 +24,6 @@ public class CommonDefinition : AppDefinition
             app.UseSwaggerUI();
         }
 
-        app.UseStaticFiles();
-
         app.UseHttpsRedirection();
     }
 }
