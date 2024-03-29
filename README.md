@@ -2,6 +2,11 @@
 
 Define your Web API application parts in different definitions (files). It's remarkably simple and useful. You will know what features your application consists of.
 
+## Версия 2.4.3
+* Генерирование Open API спецификации по умолчанию отключено (commented)
+* Исправлены синтаксические ошибки
+* Обновлены nuget-пакеты
+
 ## Версия 2.4.2
 * Обновлено строение папок в проекте.
 * Удалена ненужная SolutionItems папка.
