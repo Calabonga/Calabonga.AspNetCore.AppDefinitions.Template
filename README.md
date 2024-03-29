@@ -2,6 +2,10 @@
 
 Define your Web API application parts in different definitions (files). It's remarkably simple and useful. You will know what features your application consists of.
 
+## Версия 2.4.2
+* Обновлено строение папок в проекте.
+* Удалена ненужная SolutionItems папка.
+
 ## Версия 2.4.1
 
 * Обновлены nuget-пакеты, в частности, обновлен `AppDefinition` пакет, где был добавлен перехват ошибок при поиске модулей определений (AppDefinition).
