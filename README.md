@@ -1,6 +1,14 @@
 # ASP.NET Core Web API with Application Definitions
 
+Calabonga.AspNetCore.AppDefinitions.Template использует сборку `Calabonga.AspNetCore.AppDefinitions` ([nuget](https://github.com/Calabonga/Calabonga.AspNetCore.AppDefinitions)), которая позволяет навести порядок в вашем Program.cs. Можно всё разложить "по полочкам". А еще можно реализовать систему плагинов. Чтобы воспользоваться сборкой надо просто установить nuget-пакет [Calabonga.AspNetCore.AppDefinitions](https://www.nuget.org/packages/Calabonga.AspNetCore.AppDefinitions/).
+
 Define your Web API application parts in different definitions (files). It's remarkably simple and useful. You will know what features your application consists of.
+
+## Версия 3.0.0
+* Сборка переведена на NET8 по причине скорого окончания срока действия NET6.
+* Добавлены описание методов (summaries).
+* Изменены описание для ясности и однозначности.
+* Исправлены некоторые синтаксические ошибки.
 
 ## Версия 2.4.3
 * Генерирование Open API спецификации по умолчанию отключено (commented)
