@@ -1,4 +1,5 @@
 ﻿using Calabonga.AspNetCore.AppDefinitions;
+using Scalar.AspNetCore;
 
 namespace Calabonga.AppDefinitions.Web.Definitions.Commons;
 
@@ -9,10 +10,8 @@ public class CommonDefinition : AppDefinition
 {
     public override void ConfigureServices(WebApplicationBuilder builder)
     {
-        // Add services to the container.
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen();
+        builder.Services.AddOpenApi();
     }
 
     public override void ConfigureApplication(WebApplication app)
@@ -20,8 +19,8 @@ public class CommonDefinition : AppDefinition
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
-            app.UseSwagger();
-            app.UseSwaggerUI();
+            app.MapOpenApi();
+            app.MapScalarApiReference();
         }
 
         app.UseHttpsRedirection();
