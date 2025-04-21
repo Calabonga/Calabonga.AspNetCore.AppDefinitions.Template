@@ -1,10 +1,10 @@
-{
+﻿{
     "$schema": "http://json.schemastore.org/template",
     "author": "Calabonga SOFT",
     "classifications": [
         "Common",
         "Web",
-        "API"
+        "Web API"
     ],
     "name": "ASP.NET Core Web API with AppDefinitions",
     "description": "Define your Web API application parts in different definitions (files) for NET9.0. It's remarkably simple and useful. You will know what features your application consists of.",
@@ -37,8 +37,7 @@
             "description": "The target framework for the project.",
             "datatype": "choice",
             "choices": [
-                { "choice": "net9.0" },
-                { "choice": "net8.0" }
+                { "choice": "net9.0" }
             ],
             "defaultValue": "net9.0",
             "replaces": "net9.0"
