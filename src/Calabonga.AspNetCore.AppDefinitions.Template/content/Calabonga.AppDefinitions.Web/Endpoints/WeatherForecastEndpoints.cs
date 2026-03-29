@@ -23,10 +23,11 @@ public class WeatherForecastEndpoints : AppDefinition
                             summaries[Random.Shared.Next(summaries.Length)]
                         ))
                     .ToArray();
+
                 logger.LogInformation("WeatherForecast request execute at [{Time}].", DateTime.UtcNow);
+
                 return forecast;
             })
-            .WithName("GetWeatherForecast")
-            .WithOpenApi();
+            .WithName("GetWeatherForecast");
     }
 }
