@@ -1,7 +1,7 @@
 ﻿using Calabonga.AspNetCore.AppDefinitions;
 using Scalar.AspNetCore;
 
-namespace Calabonga.AppDefinitions.Web.Definitions.Commons;
+namespace Calabonga.AppDefinitions.Web.Definitions;
 
 /// <summary>
 /// Common definition
