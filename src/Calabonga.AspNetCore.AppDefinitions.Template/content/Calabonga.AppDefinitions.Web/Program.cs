@@ -1,4 +1,4 @@
-using Calabonga.AspNetCore.AppDefinitions;
+﻿using Calabonga.AspNetCore.AppDefinitions;
 using Serilog;
 
 try
@@ -34,7 +34,7 @@ catch (Exception ex)
     }
 
     Log.Fatal(ex, "Unhandled exception");
-    return 1;
+    throw;
 }
 finally
 {

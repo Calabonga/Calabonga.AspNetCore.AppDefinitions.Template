@@ -7,7 +7,7 @@ namespace Calabonga.AppDefinitions.Web.Endpoints;
 /// <summary>
 /// Endpoint definition for <see cref="WeatherForecast"/> entity.
 /// </summary>
-public class WeatherForecastEndpoints : AppDefinition
+public sealed class WeatherForecastEndpoints : AppDefinition
 {
     public override void ConfigureApplication(WebApplication app)
     {
