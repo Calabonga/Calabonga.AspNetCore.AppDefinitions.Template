@@ -6,7 +6,7 @@ namespace Calabonga.AppDefinitions.Web.Definitions;
 /// <summary>
 /// Common definition
 /// </summary>
-public class CommonDefinition : AppDefinition
+public sealed class CommonDefinition : AppDefinition
 {
     public override void ConfigureServices(WebApplicationBuilder builder)
     {
