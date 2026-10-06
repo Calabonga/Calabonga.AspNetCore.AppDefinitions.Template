@@ -4,7 +4,7 @@ Calabonga.AspNetCore.AppDefinitions.Template использует сборку `
 
 Define your Web API application parts in different definitions (files). It's remarkably simple and useful. You will know what features your application consists of.
 
-## Версия 10.0.1
+## Версия 10.0.2
 
 * Обновлены nuget-пакеты шаблона:
   * `Calabonga.AspNetCore.AppDefinitions`: 10.0.0 → 10.0.1
