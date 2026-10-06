@@ -11,7 +11,7 @@ Define your Web API application parts in different definitions (files). It's rem
   * `Microsoft.AspNetCore.OpenApi`: 10.0.5 → 10.0.12
   * `Scalar.AspNetCore`: 2.13.18 → 2.17.13
 
-## Верси 10.0.0
+## Версия 10.0.0
 
 * Сборка переведена на NET10. Версия сборки выставлена в соответствии с версией платформы NET для упрощения понимания принадлежности к платформе.
 * Файл решения (sln) мигрирован на новый формат (slnx).
