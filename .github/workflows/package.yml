@@ -25,7 +25,7 @@ jobs:
         run: dotnet restore 'src/Calabonga.AspNetCore.AppDefinitions.Template.slnx'
 
       - name: Build the NuGet package
-        run: dotnet pack 'src/Calabonga.AspNetCore.AppDefinitions.Template.slnx' --configuration Release --output ${{env.DOTNET_ROOT}}\Package
+        run: dotnet pack 'src/Calabonga.AspNetCore.AppDefinitions.Template.slnx' --configuration Release --output "${{env.DOTNET_ROOT}}\Package"
 
       - name: Publish NuGet Package
-        run: dotnet nuget push ${{env.DOTNET_ROOT}}\Package\*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+        run: dotnet nuget push "${{env.DOTNET_ROOT}}\Package\*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
